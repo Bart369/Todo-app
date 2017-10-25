@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS list;
+CREATE TABLE IF NOT EXISTS list(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR,
+  todo VARCHAR,
+  status VARCHAR
+);
+

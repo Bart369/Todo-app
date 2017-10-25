@@ -21,7 +21,9 @@
   "homepage": "https://github.com/Bart369/Todo-app#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
+    "method-override": "^2.3.10",
     "morgan": "^1.9.0",
     "pg-promise": "^7.0.3"
   }
