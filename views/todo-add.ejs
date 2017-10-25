@@ -1,0 +1,17 @@
+<% include ./partials/boilerplate.ejs %>
+
+  <div class = 'form-page'>
+    <div class = 'add'>
+      <!-- This is taking using to localhost:3000/todo via the post method  -->
+      <form action = '/todo' method = 'POST'>
+        <input type = 'text' name = 'todo' placeholder = 'Todo Item'/>
+        <input type = 'text' name = 'info' placeholder = 'Extra Info'/>
+        <input type = 'text' name = 'status' placeholder = 'Current Status'/>
+        <input type = 'submit' value = 'Add it!'>
+      </form>
+    </div>
+    <a href = '/todo'>Back to do list</a>
+  </div>
+
+
+<% include ./partials/end.ejs %>
