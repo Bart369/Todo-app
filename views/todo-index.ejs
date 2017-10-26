@@ -12,6 +12,9 @@
       <form method="get" action="/todo/<%= data.id %>/edit">
         <button type="submit">Edit item!</button>
       </form>
+      <form method="POST" action="/todo/<%= data.id %>?_method=DELETE"">
+        <button type="submit">Delete!</button>
+      </form>
     </div>
   <% }) %>
   </div>

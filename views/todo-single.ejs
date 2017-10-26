@@ -7,6 +7,9 @@
 <form method="get" action="/todo">
     <button type="submit">Back to my list!</button>
 </form>
+<form method="POST" action="/todo/<%= data.id %>?_method=DELETE"">
+    <button type="submit">Delete!</button>
+</form>
 
 
 <% include ./partials/end.ejs %>
