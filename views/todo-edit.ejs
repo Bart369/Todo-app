@@ -2,7 +2,7 @@
 
   <div class = 'form-page'>
     <div class = 'add'>
-      <form action = '/todo?_method=PUT' method = 'POST'>
+      <form method = 'POST' action = '/todo/<%= data.id %>/edit?_method=PUT'>
         <input type = 'text' name = 'todo' placeholder = 'Todo Item' value = '<%= data.todo %>'/>
         <input type = 'text' name = 'info' placeholder = 'Extra Info' value = '<%= data.info %>'/>
         <input type = 'text' name = 'status' placeholder = 'Current Status' value = '<%= data.status %>'/>
