@@ -10,6 +10,9 @@
       <div class = 'todo<%= i %>'> </div>
       <h3><%= data.todo %></h3>
       <h3>Current Status: <%= data.status %></h3>
+      <form method="get" action="/todo/<%= data.id %>/edit">
+        <button type="submit">Edit item!</button>
+      </form>
     </div>
   <% }) %>
   </div>
