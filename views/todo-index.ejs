@@ -1,4 +1,8 @@
 <% include ./partials/boilerplate.ejs %>
+  <form method="get" action="/todo/add">
+    <button type="submit">Add to list!</button>
+  </form>
+  <a href ='/auth/logout'><button>Logout!</button></a>
 
 <div>
   <% let i = 0; %>
@@ -18,10 +22,7 @@
     </div>
   <% }) %>
   </div>
-  <form method="get" action="/todo/add">
-    <button type="submit">Add to list!</button>
-  </form>
-  <a href ='/auth/logout'>Log out</a>
+
 </div>
 
 <% include ./partials/end.ejs %>
