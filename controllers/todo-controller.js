@@ -28,8 +28,6 @@ todoController.create = (req,res) => {
   })
 }
 
-
-
 //The whole point of this is to redirect if the user goes straight to todo/id/edit
 todoController.edit = (req,res) => {
   Todo.findById(req.params.id)

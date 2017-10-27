@@ -18,7 +18,7 @@ app.listen(PORT, () =>{
 app.set('views',path.join(__dirname,'views'))
 app.set('view engine','ejs')
 
-app.use(logger('div'));
+app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
@@ -38,6 +38,11 @@ app.get('/', (req,res) => {
 
 const todoRoutes = require('./routes/todo-routes.js');
 app.use('/todo', todoRoutes);
+const authRoutes = require('./routes/auth-routes.js');
+app.use('/auth', authRoutes);
+
+const userRoutes = require('./routes/user-routes.js');
+app.use('/user', userRoutes);
 
 app.use('*', (req,res) => {
   res.status(400).send('Not Found')
